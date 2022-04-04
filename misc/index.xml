@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Miscs on @a2ito</title>
+    <link>https://a2ito.ml/misc/</link>
+    <description>Recent content in Miscs on @a2ito</description>
+    <image>
+      <url>https://a2ito.ml/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://a2ito.ml/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 03 Apr 2022 19:52:35 +0900</lastBuildDate><atom:link href="https://a2ito.ml/misc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://a2ito.ml/misc/about/</link>
+      <pubDate>Sun, 03 Apr 2022 19:52:35 +0900</pubDate>
+      
+      <guid>https://a2ito.ml/misc/about/</guid>
+      <description>本サイトについて 本サイトはIT技術（特にインフラ系）の情報発信をしていきたいサイトです。
+ github pages hugo freenom  を利用しています。
+アクセス解析について 本サイトでは、Googleアナリティクスを利用してアクセス解析を行っております。 トラフィックデータは匿名で収集されており、個人を特定するものではありません。ブラウザ上で Cookie を無効化することで収集できないようにすることも可能です。もしご希望の方は、お使いのブラウザ設定をご確認ください。詳しくはこちらをご覧ください。</description>
+    </item>
+    
+    <item>
+      <title>Profile</title>
+      <link>https://a2ito.ml/misc/profile/</link>
+      <pubDate>Sun, 03 Apr 2022 11:51:32 +0900</pubDate>
+      
+      <guid>https://a2ito.ml/misc/profile/</guid>
+      <description>Summary ようこそ！ 某SIerでインフラエンジニアをやっています。
+IT技術関連の色々なトピックを書いてみる予定です。多分インフラ関連やプログラミング関連が多くなるかもしれません。
+本サイトは github pages で運用しています。
+Qualifications  そのうち書きます  Work Experience  そのうち書きます  Certificates  Google Cloud 全部(Cloud Architectなど、全部取りました) Kubernetes系(CKA,CKAD) IPAいくつか  Education  そのうち書きます  </description>
+    </item>
+    
+  </channel>
+</rss>
