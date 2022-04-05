@@ -3,7 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://a2ito.ml/</loc>
-    <lastmod>2022-04-03T19:52:35+09:00</lastmod>
+    <lastmod>2022-04-05T08:08:07+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://a2ito.ml/tags/github-pages/</loc>
+    <lastmod>2022-04-05T08:08:07+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://a2ito.ml/tags/hugo/</loc>
+    <lastmod>2022-04-05T08:08:07+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://a2ito.ml/posts/</loc>
+    <lastmod>2022-04-05T08:08:07+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://a2ito.ml/posts/20220405-post/</loc>
+    <lastmod>2022-04-05T08:08:07+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://a2ito.ml/tags/</loc>
+    <lastmod>2022-04-05T08:08:07+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -19,26 +44,6 @@
   </url><url>
     <loc>https://a2ito.ml/misc/profile/</loc>
     <lastmod>2022-04-03T11:51:32+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://a2ito.ml/tags/github-pages/</loc>
-    <lastmod>2022-04-03T11:13:32+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://a2ito.ml/tags/hugo/</loc>
-    <lastmod>2022-04-03T11:13:32+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://a2ito.ml/posts/</loc>
-    <lastmod>2022-04-03T11:13:32+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://a2ito.ml/tags/</loc>
-    <lastmod>2022-04-03T11:13:32+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>

@@ -9,7 +9,21 @@
       <link>https://a2ito.ml/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 03 Apr 2022 11:13:32 +0900</lastBuildDate><atom:link href="https://a2ito.ml/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Apr 2022 08:08:07 +0900</lastBuildDate><atom:link href="https://a2ito.ml/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>privateリポジトリでブログを書いてpublicリポジトリでブログを公開する方法</title>
+      <link>https://a2ito.ml/posts/20220405-post/</link>
+      <pubDate>Tue, 05 Apr 2022 08:08:07 +0900</pubDate>
+      
+      <guid>https://a2ito.ml/posts/20220405-post/</guid>
+      <description>前回の記事で記載した通り、ブログソース（mdたち）の private リポジトリ化について紹介します。
+以下の仕様で実装します。
+ privateリポジトリに記事をpushする github actions で public リポジトリに docs のみdeployする  前提  blog -&amp;gt; privateリポジトリ。md形式のブログソースデータを管理します。 blog-public -&amp;gt; publicリポジトリ。こちらでgithub pages を公開します。  準備 sshキーペアの作成 まずは、privateからpublic側へactions で push できるよう、キーペアを作成します。
+ssh-keygen -t rsa -b 4096 -C &amp;#34;$(git config user.email)&amp;#34; -f gh-pages -N &amp;#34;&amp;#34;  gh-pages.pub gh-pages  の２ファイルが生成されていると思います。-fで指定するキーファイル名は何でもいいです。
+blog-private側へ公開鍵を登録 blog-privateリポジトリへ移動します。 Setting -&amp;gt; Deploy keys から Add deploy key を選択して、公開鍵をペーストします。 鍵の名前はなんでもいいです。
+blog側へ秘密鍵を登録 blog側のリポジトリへ移動します。 Setting -&amp;gt; Actions から New repository secret を選択して、秘密鍵をペーストします。 鍵の名前はなんでもいいですが、後述の Github Actions 上で指定する必要あるので、特に要件がなければACTIONS_DEPLOY_KEYでいいでしょう。</description>
+    </item>
+    
     <item>
       <title>自前でBlogサイトを作ってみました</title>
       <link>https://a2ito.ml/posts/20220403-post/</link>
