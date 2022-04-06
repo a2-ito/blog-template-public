@@ -32,17 +32,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://a2ito.ml/misc/about/</loc>
+    <loc>https://a2ito.ml/posts/about/</loc>
     <lastmod>2022-04-03T19:52:35+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://a2ito.ml/misc/</loc>
-    <lastmod>2022-04-03T19:52:35+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://a2ito.ml/misc/profile/</loc>
+    <loc>https://a2ito.ml/posts/profile/</loc>
     <lastmod>2022-04-03T11:51:32+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -52,7 +47,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://a2ito.ml/archives/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://a2ito.ml/categories/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://a2ito.ml/search/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

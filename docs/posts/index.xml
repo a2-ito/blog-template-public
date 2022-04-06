@@ -25,6 +25,29 @@ blog側へ秘密鍵を登録 blog側のリポジトリへ移動します。 Sett
     </item>
     
     <item>
+      <title>About</title>
+      <link>https://a2ito.ml/posts/about/</link>
+      <pubDate>Sun, 03 Apr 2022 19:52:35 +0900</pubDate>
+      
+      <guid>https://a2ito.ml/posts/about/</guid>
+      <description>本サイトについて 本サイトはIT技術（特にインフラ系）の情報発信をしていきたいサイトです。
+ github pages hugo freenom  を利用しています。
+アクセス解析について 本サイトでは、Googleアナリティクスを利用してアクセス解析を行っております。 トラフィックデータは匿名で収集されており、個人を特定するものではありません。ブラウザ上で Cookie を無効化することで収集できないようにすることも可能です。もしご希望の方は、お使いのブラウザ設定をご確認ください。詳しくはこちらをご覧ください。</description>
+    </item>
+    
+    <item>
+      <title>Profile</title>
+      <link>https://a2ito.ml/posts/profile/</link>
+      <pubDate>Sun, 03 Apr 2022 11:51:32 +0900</pubDate>
+      
+      <guid>https://a2ito.ml/posts/profile/</guid>
+      <description>Summary ようこそ！ 某SIerでインフラエンジニアをやっています。
+IT技術関連の色々なトピックを書いてみる予定です。多分インフラ関連やプログラミング関連が多くなるかもしれません。
+本サイトは github pages で運用しています。
+Qualifications  そのうち書きます  Work Experience  そのうち書きます  Certificates  Google Cloud 全部(Cloud Architectなど、全部取りました) Kubernetes系(CKA,CKAD) IPAいくつか  Education  そのうち書きます  </description>
+    </item>
+    
+    <item>
       <title>自前でBlogサイトを作ってみました</title>
       <link>https://a2ito.ml/posts/20220403-post/</link>
       <pubDate>Sun, 03 Apr 2022 11:13:32 +0900</pubDate>
