@@ -9,7 +9,27 @@
       <link>https://a2ito.ml/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 05 Apr 2022 08:08:07 +0900</lastBuildDate><atom:link href="https://a2ito.ml/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Apr 2022 21:53:09 +0900</lastBuildDate><atom:link href="https://a2ito.ml/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>コピペでmarkdownに画像を取り込む VS Code plugin Paste Image を試す</title>
+      <link>https://a2ito.ml/posts/20220407-post/</link>
+      <pubDate>Thu, 07 Apr 2022 21:53:09 +0900</pubDate>
+      
+      <guid>https://a2ito.ml/posts/20220407-post/</guid>
+      <description>以前の記事で軽く紹介させてもらいましたが、コピペするだけで markdown に画像が挿入できる VS Code プラグイン Paste Image を試したいと思います。
+真面目に調べたら、すでにとても多くの人が試していて、何番煎じかという感じですが。。。気にせずやっていきます。
+はじめに このブログは Windows の WSL2 上の vim で作っているので、そもそも VS Code ではなく Vim で同じことが実現できればそっちのほうがいいなと考えました。 で少し調べたところ、md-img-paste という vim プラグインがありました。
+結論からいうと、テキストはクリップボード共有できたのですが、md-img-pasteを使った画像ペーストはできませんでした。できた方がいれば教えてください。
+テキストのクリップボード共有はこちらを参考にご対応いただければ。ちなみに、これは僕だけかもしれませんが、DISPLAY変数を設定した状態だと vim 起動自体がとても遅く（体感3秒くらい）なりました。。。なので、結局クリップボード共有自体使うのをやめました。
+設定方法 Paste Image をお持ちの VS Code に追加します。
+config.jsonに以下の設定を追加します。
+pasteImage.basePath markdown上で指定する画像ファイルのパスのベースパスを指定します。ここを基準として、pasteImage.pathへの相対パスを出力する形になります。
+Hugo では、.../static/ がデフォルトのstaticコンテンツ置き場として構成されています。参考 さらに、僕の場合は画像ファイルはさらにその配下に /img を作って格納するようにしていますので、markdown からは基本的に/img/xxx.pngのような形で指定するようにさせたいわけです。結局、hugo の static ファイル置き場に合わせる、が基本的なやり方になるだろうと理解しています。
+pasteImage.insertPattern ペースト時に生成される画像ファイル名を指定します。特にこだわりなければそのままでOKです。
+pasteImage.path ペースト時に生成される画像ファイルの置き場所を指定します。
+{  &amp;#34;pasteImage.basePath&amp;#34;: &amp;#34;${currentFileDir}/../../static/&amp;#34;,  &amp;#34;pasteImage.insertPattern&amp;#34;: &amp;#34;${imageSyntaxPrefix}/${imageFilePath}${imageSyntaxSuffix}&amp;#34;,  &amp;#34;pasteImage.path&amp;#34;: &amp;#34;${currentFileDir}/../../static/img&amp;#34; } markdown への貼り付け Ctrl + Alt + V でペーストすると、</description>
+    </item>
+    
     <item>
       <title>privateリポジトリでブログを書いてpublicリポジトリでブログを公開する方法</title>
       <link>https://a2ito.ml/posts/20220405-post/</link>
