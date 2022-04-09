@@ -26,7 +26,8 @@ config.jsonに以下の設定を追加します。
 pasteImage.basePath markdown上で指定する画像ファイルのパスのベースパスを指定します。ここを基準として、pasteImage.pathへの相対パスを出力する形になります。
 Hugo では、.../static/ がデフォルトのstaticコンテンツ置き場として構成されています。参考 さらに、僕の場合は画像ファイルはさらにその配下に /img を作って格納するようにしていますので、markdown からは基本的に/img/xxx.pngのような形で指定するようにさせたいわけです。結局、hugo の static ファイル置き場に合わせる、が基本的なやり方になるだろうと理解しています。
 pasteImage.insertPattern ペースト時に生成される画像ファイル名を指定します。特にこだわりなければそのままでOKです。
-pasteImage.path ペースト時に生成される画像ファイルの置き場所を指定します。
+pasteImage.path ペースト時に生成される画像ファイルの置き場所を指定します。画像置き場やmarkdownファイル置き場の設定によって変わってくるので、こちらは個人の設定に合わせてご対応ください。
+現状の僕の設定を以下に公開します。
 {  &amp;#34;pasteImage.basePath&amp;#34;: &amp;#34;${currentFileDir}/../../static/&amp;#34;,  &amp;#34;pasteImage.insertPattern&amp;#34;: &amp;#34;${imageSyntaxPrefix}/${imageFilePath}${imageSyntaxSuffix}&amp;#34;,  &amp;#34;pasteImage.path&amp;#34;: &amp;#34;${currentFileDir}/../../static/img&amp;#34; } markdown への貼り付け Ctrl + Alt + V でペーストすると、</description>
     </item>
     

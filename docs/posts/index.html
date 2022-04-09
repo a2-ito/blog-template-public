@@ -10,7 +10,8 @@ config.jsonに以下の設定を追加します。
 pasteImage.basePath markdown上で指定する画像ファイルのパスのベースパスを指定します。ここを基準として、pasteImage.pathへの相対パスを出力する形になります。
 Hugo では、.../static/ がデフォルトのstaticコンテンツ置き場として構成されています。参考 さらに、僕の場合は画像ファイルはさらにその配下に /img を作って格納するようにしていますので、markdown からは基本的に/img/xxx.pngのような形で指定するようにさせたいわけです。結局、hugo の static ファイル置き場に合わせる、が基本的なやり方になるだろうと理解しています。
 pasteImage.insertPattern ペースト時に生成される画像ファイル名を指定します。特にこだわりなければそのままでOKです。
-pasteImage.path ペースト時に生成される画像ファイルの置き場所を指定します。
+pasteImage.path ペースト時に生成される画像ファイルの置き場所を指定します。画像置き場やmarkdownファイル置き場の設定によって変わってくるので、こちらは個人の設定に合わせてご対応ください。
+現状の僕の設定を以下に公開します。
 { "pasteImage.basePath": "${currentFileDir}/../../static/", "pasteImage.insertPattern": "${imageSyntaxPrefix}/${imageFilePath}${imageSyntaxSuffix}", "pasteImage.path": "${currentFileDir}/../../static/img" } markdown への貼り付け Ctrl + Alt + V でペーストすると、...</p></section><footer class=entry-footer><span title="2022-04-07 21:53:09 +0900 +0900">April 7, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Me</footer><a class=entry-link aria-label="post link to コピペでmarkdownに画像を取り込む VS Code plugin Paste Image を試す" href=https://a2ito.ml/posts/20220407-post/></a></article><article class=post-entry><header class=entry-header><h2>privateリポジトリでブログを書いてpublicリポジトリでブログを公開する方法</h2></header><section class=entry-content><p>前回の記事で記載した通り、ブログソース（mdたち）の private リポジトリ化について紹介します。
 以下の仕様で実装します。
 privateリポジトリに記事をpushする github actions で public リポジトリに docs のみdeployする 前提 blog -> privateリポジトリ。md形式のブログソースデータを管理します。 blog-public -> publicリポジトリ。こちらでgithub pages を公開します。 準備 sshキーペアの作成 まずは、privateからpublic側へactions で push できるよう、キーペアを作成します。
