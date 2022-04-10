@@ -1,32 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on @a2ito</title>
-    <link>https://a2ito.ml/tags/</link>
-    <description>Recent content in Tags on @a2ito</description>
+    <title>Tags on template-page</title>
+    <link>https://a2-ito.github.io/blog-template-public/tags/</link>
+    <description>Recent content in Tags on template-page</description>
     <image>
-      <url>https://a2ito.ml/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://a2ito.ml/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://a2-ito.github.io/blog-template-public/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://a2-ito.github.io/blog-template-public/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 05 Apr 2022 08:08:07 +0900</lastBuildDate><atom:link href="https://a2ito.ml/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>github pages</title>
-      <link>https://a2ito.ml/tags/github-pages/</link>
-      <pubDate>Tue, 05 Apr 2022 08:08:07 +0900</pubDate>
-      
-      <guid>https://a2ito.ml/tags/github-pages/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>https://a2ito.ml/tags/hugo/</link>
-      <pubDate>Tue, 05 Apr 2022 08:08:07 +0900</pubDate>
-      
-      <guid>https://a2ito.ml/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://a2-ito.github.io/blog-template-public/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

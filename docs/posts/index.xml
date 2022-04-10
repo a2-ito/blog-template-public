@@ -1,95 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on @a2ito</title>
-    <link>https://a2ito.ml/posts/</link>
-    <description>Recent content in Posts on @a2ito</description>
+    <title>Posts on template-page</title>
+    <link>https://a2-ito.github.io/blog-template-public/posts/</link>
+    <description>Recent content in Posts on template-page</description>
     <image>
-      <url>https://a2ito.ml/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://a2ito.ml/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://a2-ito.github.io/blog-template-public/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://a2-ito.github.io/blog-template-public/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 07 Apr 2022 21:53:09 +0900</lastBuildDate><atom:link href="https://a2ito.ml/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>コピペでmarkdownに画像を取り込む VS Code plugin Paste Image を試す</title>
-      <link>https://a2ito.ml/posts/20220407-post/</link>
-      <pubDate>Thu, 07 Apr 2022 21:53:09 +0900</pubDate>
-      
-      <guid>https://a2ito.ml/posts/20220407-post/</guid>
-      <description>以前の記事で軽く紹介させてもらいましたが、コピペするだけで markdown に画像が挿入できる VS Code プラグイン Paste Image を試したいと思います。
-真面目に調べたら、すでにとても多くの人が試していて、何番煎じかという感じですが。。。気にせずやっていきます。
-はじめに このブログは Windows の WSL2 上の vim で作っているので、そもそも VS Code ではなく Vim で同じことが実現できればそっちのほうがいいなと考えました。 で少し調べたところ、md-img-paste という vim プラグインがありました。
-結論からいうと、テキストはクリップボード共有できたのですが、md-img-pasteを使った画像ペーストはできませんでした。できた方がいれば教えてください。
-テキストのクリップボード共有はこちらを参考にご対応いただければ。ちなみに、これは僕だけかもしれませんが、DISPLAY変数を設定した状態だと vim 起動自体がとても遅く（体感3秒くらい）なりました。。。なので、結局クリップボード共有自体使うのをやめました。
-設定方法 Paste Image をお持ちの VS Code に追加します。
-config.jsonに以下の設定を追加します。
-pasteImage.basePath markdown上で指定する画像ファイルのパスのベースパスを指定します。ここを基準として、pasteImage.pathへの相対パスを出力する形になります。
-Hugo では、.../static/ がデフォルトのstaticコンテンツ置き場として構成されています。参考 さらに、僕の場合は画像ファイルはさらにその配下に /img を作って格納するようにしていますので、markdown からは基本的に/img/xxx.pngのような形で指定するようにさせたいわけです。結局、hugo の static ファイル置き場に合わせる、が基本的なやり方になるだろうと理解しています。
-pasteImage.insertPattern ペースト時に生成される画像ファイル名を指定します。特にこだわりなければそのままでOKです。
-pasteImage.path ペースト時に生成される画像ファイルの置き場所を指定します。画像置き場やmarkdownファイル置き場の設定によって変わってくるので、こちらは個人の設定に合わせてご対応ください。
-現状の僕の設定を以下に公開します。
-{  &amp;#34;pasteImage.basePath&amp;#34;: &amp;#34;${currentFileDir}/../../static/&amp;#34;,  &amp;#34;pasteImage.insertPattern&amp;#34;: &amp;#34;${imageSyntaxPrefix}/${imageFilePath}${imageSyntaxSuffix}&amp;#34;,  &amp;#34;pasteImage.path&amp;#34;: &amp;#34;${currentFileDir}/../../static/img&amp;#34; } markdown への貼り付け Ctrl + Alt + V でペーストすると、</description>
-    </item>
-    
-    <item>
-      <title>privateリポジトリでブログを書いてpublicリポジトリでブログを公開する方法</title>
-      <link>https://a2ito.ml/posts/20220405-post/</link>
-      <pubDate>Tue, 05 Apr 2022 08:08:07 +0900</pubDate>
-      
-      <guid>https://a2ito.ml/posts/20220405-post/</guid>
-      <description>前回の記事で記載した通り、ブログソース（mdたち）の private リポジトリ化について紹介します。
-以下の仕様で実装します。
- privateリポジトリに記事をpushする github actions で public リポジトリに docs のみdeployする  前提  blog -&amp;gt; privateリポジトリ。md形式のブログソースデータを管理します。 blog-public -&amp;gt; publicリポジトリ。こちらでgithub pages を公開します。  準備 sshキーペアの作成 まずは、privateからpublic側へactions で push できるよう、キーペアを作成します。
-ssh-keygen -t rsa -b 4096 -C &amp;#34;$(git config user.email)&amp;#34; -f gh-pages -N &amp;#34;&amp;#34;  gh-pages.pub gh-pages  の２ファイルが生成されていると思います。-fで指定するキーファイル名は何でもいいです。
-blog-private側へ公開鍵を登録 blog-privateリポジトリへ移動します。 Setting -&amp;gt; Deploy keys から Add deploy key を選択して、公開鍵をペーストします。 鍵の名前はなんでもいいです。
-blog側へ秘密鍵を登録 blog側のリポジトリへ移動します。 Setting -&amp;gt; Actions から New repository secret を選択して、秘密鍵をペーストします。 鍵の名前はなんでもいいですが、後述の Github Actions 上で指定する必要あるので、特に要件がなければACTIONS_DEPLOY_KEYでいいでしょう。</description>
-    </item>
-    
+    <lastBuildDate>Sun, 10 Apr 2022 12:23:53 +0900</lastBuildDate><atom:link href="https://a2-ito.github.io/blog-template-public/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://a2ito.ml/posts/about/</link>
-      <pubDate>Sun, 03 Apr 2022 19:52:35 +0900</pubDate>
+      <link>https://a2-ito.github.io/blog-template-public/posts/about/</link>
+      <pubDate>Sun, 10 Apr 2022 12:23:53 +0900</pubDate>
       
-      <guid>https://a2ito.ml/posts/about/</guid>
-      <description>本サイトについて 本サイトはIT技術（特にインフラ系）の情報発信をしていきたいサイトです。
- github pages hugo freenom  を利用しています。
-アクセス解析について 本サイトでは、Googleアナリティクスを利用してアクセス解析を行っております。 トラフィックデータは匿名で収集されており、個人を特定するものではありません。ブラウザ上で Cookie を無効化することで収集できないようにすることも可能です。もしご希望の方は、お使いのブラウザ設定をご確認ください。詳しくはこちらをご覧ください。</description>
-    </item>
-    
-    <item>
-      <title>Profile</title>
-      <link>https://a2ito.ml/posts/profile/</link>
-      <pubDate>Sun, 03 Apr 2022 11:51:32 +0900</pubDate>
-      
-      <guid>https://a2ito.ml/posts/profile/</guid>
-      <description>Summary ようこそ！ 某SIerでインフラエンジニアをやっています。
-IT技術関連の色々なトピックを書いてみる予定です。多分インフラ関連やプログラミング関連が多くなるかもしれません。
-本サイトは github pages で運用しています。
-Qualifications  そのうち書きます  Work Experience  そのうち書きます  Certificates  Google Cloud 全部(Cloud Architectなど、全部取りました) Kubernetes系(CKA,CKAD) IPAいくつか  Education  そのうち書きます  </description>
-    </item>
-    
-    <item>
-      <title>自前でBlogサイトを作ってみました</title>
-      <link>https://a2ito.ml/posts/20220403-post/</link>
-      <pubDate>Sun, 03 Apr 2022 11:13:32 +0900</pubDate>
-      
-      <guid>https://a2ito.ml/posts/20220403-post/</guid>
-      <description>はじめに 自前でBlogページ作ってみました。一発目の投稿は、このページ作成の経緯とか技術的なちょっとした解説をしていきます。 よろしくお願いいたします。
-profile ページにも記載していますが、本サイトは以下のような構成で成り立っています。
- Webサイトホスティング  github pages   Webページ作成  Hugo v0.96 (2022.04時点の最新版)   ドメイン取得  freenom 0円でドメイン取得・運用できるなんていい時代ですね。    便利サービス・ツールにすがりまくっているので、自前と堂々と名乗っていいものか、、、というのはありますが。
-なぜブログを始めようと思ったか？ もともとどこかのブログで何かしらアウトプットしよう、と思っていました。僕はインフラエンジニアをやっていてIT技術に触れる機会はよくあったのと、個人的に分散システム全般的に興味があり、社内でちょこちょこ草の根勉強会でプレゼンしたりはしていました。その活動自体はとても良かったと思っていて、技術的なキャッチアップだけではなく、プレゼン能力も大きく向上したのかなと感じています。一方で、ブログ形式で静的に情報を残していく活動も必要なのではないかと感じていました。自分が発表した内容といっても、時間が経てば自分ですら忘れてしまいますしね。
-外部サービスと比較したときのデメリット 今回は自前で作ったのですが、ブログ化のプラットフォームとして社内の情報発信サイトや、Qiita/hatena/Zennなどの外部サービスでもいいのですが、前者はクローズドでもったいないですし、後者はまあありっちゃありなのですが、色々とそれ自体が勉強になるかなと思って自前でやってみました。
-もちろんデメリットはいくつかあると思っていて、以下に並べてみました。
-初期セットアップが面倒、お金がかかる やっぱりこれに尽きますよね。 サーバやドメイン取得など、ブログ運営において全く本質的でないところに時間を掛けたくないのは当然です。 といっても、一昔前と比べるとかなり楽に、かつお安く運用できるようになったのではないでしょうか。
-画像データのデプロイが面倒 Qiitaだとエディタに画像データをペーストすればアップロードされる仕様ですが、Hugo(のようなCLIベースの静的サイトジェネレータ)の場合は基本的に、画像をローカルの作業フォルダ(static)に保存⇒markdown から参照 になります。 これ地味に辛くて、「画像が少なくなりがち」になるの要因です。もしかしたらいいソリューションがあるかもしれません。
-と思ったらやばいソリューション見つけてしまいました。次回試します。
-Paste Image プラグイン(VS Code)
-人に見られにくい これは仕方が無いので、Twitter等のSNSを通じてURLを共有したり、Google検索に引っかかるようにするとよいのでしょう。
-まあデメリットたくさんありますよね。 敢えてメリットは列挙しませんが、上記がどうしても、という方はぜひ既存のブログサービスをお使いください。
-なぜ Hugo にしたか？ 特に理由はありません。他のツール(Gatsbyなど)を触ってみたわけじゃないのでわかりません。 たまたま目に入った、参考にさせて頂いたサイトが Hugo だったので。 結果としては、とても楽でいいツールでした。逆にいうと、Hugo を使っちゃうとブログ環境セットアップを通じてのエンジニア力のアップはのぞめませんのであしからず。笑
-で、どうやってブログ作ったの？ 1. ドメイン取得 あとからでもいいのですが、モチベーション的になんとなく先にドメイン登録してみました。一番世に出る情報ですしね。これ取りたいな、とかわかりやすいものが取れるかな、という点では重要です。今回は、無料ドメインを提供している freenom で登録してみました。
-登録した結果はこんな感じです。 無料の場合は、1年毎に更新が必要です。有料版であれば1年以上更新せずそのまま使えるようです。
-2. ローカル環境で静的ページ作成 Hugo初期セットアップ Hugo 自体のインストールから行います。 Macユーザの方はbrewで良いかと思います。 僕の場合は、バイナリを github からダウンロードしています。パスとかはよしなに。</description>
+      <guid>https://a2-ito.github.io/blog-template-public/posts/about/</guid>
+      <description></description>
     </item>
     
   </channel>

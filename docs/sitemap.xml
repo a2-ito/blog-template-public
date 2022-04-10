@@ -2,65 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://a2ito.ml/</loc>
-    <lastmod>2022-04-07T21:53:09+09:00</lastmod>
+    <loc>https://a2-ito.github.io/blog-template-public/posts/about/</loc>
+    <lastmod>2022-04-10T12:23:53+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://a2ito.ml/posts/</loc>
-    <lastmod>2022-04-07T21:53:09+09:00</lastmod>
+    <loc>https://a2-ito.github.io/blog-template-public/posts/</loc>
+    <lastmod>2022-04-10T12:23:53+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://a2ito.ml/posts/20220407-post/</loc>
-    <lastmod>2022-04-07T21:53:09+09:00</lastmod>
+    <loc>https://a2-ito.github.io/blog-template-public/</loc>
+    <lastmod>2022-04-10T12:23:53+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://a2ito.ml/tags/github-pages/</loc>
-    <lastmod>2022-04-05T08:08:07+09:00</lastmod>
+    <loc>https://a2-ito.github.io/blog-template-public/archives/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://a2ito.ml/tags/hugo/</loc>
-    <lastmod>2022-04-05T08:08:07+09:00</lastmod>
+    <loc>https://a2-ito.github.io/blog-template-public/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://a2ito.ml/posts/20220405-post/</loc>
-    <lastmod>2022-04-05T08:08:07+09:00</lastmod>
+    <loc>https://a2-ito.github.io/blog-template-public/search/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://a2ito.ml/tags/</loc>
-    <lastmod>2022-04-05T08:08:07+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://a2ito.ml/posts/about/</loc>
-    <lastmod>2022-04-03T19:52:35+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://a2ito.ml/posts/profile/</loc>
-    <lastmod>2022-04-03T11:51:32+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://a2ito.ml/posts/20220403-post/</loc>
-    <lastmod>2022-04-03T11:13:32+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://a2ito.ml/archives/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://a2ito.ml/categories/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://a2ito.ml/search/</loc>
+    <loc>https://a2-ito.github.io/blog-template-public/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
